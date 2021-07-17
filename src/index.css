@@ -1,0 +1,155 @@
+body{
+  font-weight: 600;
+  font-family: Montserrat;
+  background: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-align: center;
+  color:white
+  
+  }
+  
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Loader{
+ margin-top: 20rem;
+}
+
+.Loaderfont{
+  color: aliceblue;
+  font-family: Pattaya;
+  font-size: 5rem;
+}
+
+.Margin{
+  margin-bottom: 10rem;
+}
+
+.Common{
+  font-family: Pattaya;
+  color: #002d80;
+}
+.CommonR{
+  font-family: Pattaya;
+  color: #002d80;
+  font-size: 2rem;
+}
+
+.CommonLoad{
+  font-family: Montserrat;
+  color: #089eb9;
+}
+.CommonD{
+  font-family: Montserrat;
+  color: lightcoral;
+}
+.CommonDload{
+  font-family: Montserrat;
+  color: orangered;
+}
+.HomeDecor{
+  font-family: Pattaya;
+  font-size: 5rem;
+  color: whitesmoke;
+}
+.HomeDecor2{
+  font-family: Montserrat;
+  color: whitesmoke;
+}
+
+.Typed{
+  font-family: Montserrat;
+  color:whitesmoke;
+  font-size: 2rem;
+}
+
+
+
+.Hometext{
+  font-family: Montserrat;
+  color: white;
+}
+.HometextDark{
+  font-family: Montserrat;
+  color:darkslategrey;
+}
+.link{
+  text-decoration: none;
+}
+.CARD{
+  border-radius: 1rem;
+}
+.BOXS{
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* category */
+.Category{
+  font-family: Montserrat;
+  color: darkslategray;
+}
+
+.Cardtitle{
+  font-family: Montserrat;
+  color: darkslategray;
+  font-size: 1.5rem;
+}
+
+.icon{
+  text-decoration: none;
+}
+
+
+/* product */
+.ProductBox{
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.ProductCard{
+  font-family: Montserrat;
+}
+
+.ProductPrice{
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  color: #004d7a;
+}
+
+
+
+
+.ProductTitle{
+  font-family: Montserrat;
+  color: #002d80;
+}
+
+/* ADMIN */
+.ADMINDASH{
+  font-family: Montserrat;
+}
+
+
+/* cart */
+.CartQuantity{
+  color:#002d80;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+}
+
+
+/* coupon */
+.CouponCard{
+  font-family: Montserrat;
+  color: #051937;
+  font-size: 1rem;
+}
