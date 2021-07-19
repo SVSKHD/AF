@@ -4,7 +4,7 @@ import {auth , googleAuthProvider} from "../../config/firebase"
 import {Card} from "antd"
 import {toast} from "react-toastify"
 import {Button} from "antd"
-import {LoginOutlined , GoogleOutlined} from "@ant-design/icons"
+import {MailOutlined , GoogleOutlined} from "@ant-design/icons"
 import {useDispatch , useSelector} from "react-redux"
 import {Link} from "react-router-dom"
 import {createOrUpdateUser} from "../../components/functions/auth"
@@ -20,8 +20,8 @@ import {createOrUpdateUser} from "../../components/functions/auth"
 
 function Login({history}) {
 
-    const [email , setEmail] = useState()
-    const [password , setPassword] = useState()
+    const [email , setEmail] = useState("")
+    const [password , setPassword] = useState("")
     const [loading , setLoading] = useState(false)
 
 
@@ -145,17 +145,18 @@ function Login({history}) {
 
          <br className="mb-3"/>
             
-            <Button
-            onClick={handleSubmit}
-            icon={<LoginOutlined/>}
-            shape="round"
-            size="large"
-            block
-            type="primary"
-            disabled={!email || password.length < 6}
-            >
-            Login
-            </Button>
+         <Button
+        onClick={handleSubmit}
+        type="primary"
+        className="mb-3"
+        block
+        shape="round"
+        icon={<MailOutlined />}
+        size="large"
+        disabled={!email || !password.length < 6}
+      >
+        Login with Email/Password
+      </Button>
 
 
          </form>
