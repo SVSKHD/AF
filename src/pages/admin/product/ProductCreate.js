@@ -12,6 +12,7 @@ import { LoadingOutlined } from "@ant-design/icons";
 
 const initialState = {
   title: "",
+  subtitle:"",
   description: "",
   price: "",
   categories: [],
@@ -115,6 +116,7 @@ const ProductCreate = () => {
           handleCategoryChange={handleCatagoryChange}
           subOptions={subOptions}
           showSub={showSub}
+
           />
         
           </Card>

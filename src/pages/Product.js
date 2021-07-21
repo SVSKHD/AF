@@ -121,7 +121,7 @@ return(
     title={`${product.title} |  ${name}`}
     description={product.description}
     keywords ={`${product.title} , Kent Grand Star RO , Kent Products , AutoMatic Water Softeners , Industria Water Softeners , `}
-    image={product.images[0].url}
+    image={Default}
     />
     <NAVB/>
     <br className="mb-3"/>

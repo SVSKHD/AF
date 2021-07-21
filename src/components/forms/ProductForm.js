@@ -15,6 +15,7 @@ showSub
 
 const {
 title,
+subtitle,
 description,
 price,
 categories,
@@ -39,6 +40,17 @@ type="text"
 name="title"
 className="form-control"
 value={title}
+onChange={handleChange}
+/>
+</div>
+
+<div className="form-group">
+<label>Sub Title</label>
+<input
+type="text"
+name="subtitle"
+className="form-control"
+value={subtitle}
 onChange={handleChange}
 />
 </div>

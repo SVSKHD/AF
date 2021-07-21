@@ -315,6 +315,7 @@ return(
     description={`Aquakart best place to shop and best place to get serviced`}
     keywords ={ `Kent Grand Star RO , Kent Products , AutoMatic Water Softeners , Industria Water Softeners , `}
     image={Default}
+    url="https://aquakart.store/shop"
     />
     <br/>
     <div className="container">

@@ -37,7 +37,7 @@ const Home=(props)=> {
             description ="Aquakart is all about you basic needs at best prices and at best services."
             keywords="AquaKart , kent Softener products , IonExchane Softeners , 3M Softeners , Automatic Water Softeners , Water purifiers"
             image={Default}
-            url="https://aquakart.shop"
+            url="https://aquakart.store"
             />
             <br className="mb-5"/>
             <div className="container-fluid">
