@@ -12,6 +12,7 @@ import {
   SearchOutlined ,
   ShoppingCartOutlined,
   CarTwoTone,
+  ReadOutlined
 } from "@ant-design/icons";
 import {Link} from "react-router-dom"
 import firebase from "firebase"
@@ -113,8 +114,12 @@ const NAVB = () => {
 
       <Item key="Cart" icon={<MailOutlined/>}>
         Contact
-        <Badge count={cart.length}/>
       <Link to="/contact"/>
+      </Item>  
+
+      <Item key="Cart" icon={<ReadOutlined/>}>
+        Know More
+      <Link to="/Blogs"/>
       </Item>  
       
     </Menu>
