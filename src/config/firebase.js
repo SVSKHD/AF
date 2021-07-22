@@ -1,5 +1,6 @@
 import firebase from "firebase/app"
 import "firebase/auth"
+import "firebase/messaging"
 
 
 const Firebase ={
@@ -17,4 +18,5 @@ firebase.initializeApp(Firebase)
 
 export const auth = firebase.auth()
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
+const messaging = firebase.messaging()
 export const name = "Aquakart | Best Shopping Cart"
