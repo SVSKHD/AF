@@ -3,6 +3,7 @@ import { Menu , Badge } from "antd";
 import {
   HomeOutlined,
   AppstoreOutlined,
+  MailOutlined,
   SettingOutlined,
   UserOutlined,
   UserAddOutlined,
@@ -108,7 +109,13 @@ const NAVB = () => {
       title="Search Here"
       >
            <Search/>
-      </SubMenu>      
+      </SubMenu>    
+
+      <Item key="Cart" icon={<MailOutlined/>}>
+        Contact
+        <Badge count={cart.length}/>
+      <Link to="/contact"/>
+      </Item>  
       
     </Menu>
     <br/>

@@ -7,7 +7,6 @@ import { getCategories } from "../../../components/functions/category"
 import { getSub , updateSub } from "../../../components/functions/SubCategory"
 import { toast } from "react-toastify"
 import { useParams } from "react-router-dom"
-import CategoryForm from "../../../components/forms/CategoryForm"
 
 
 const SubUpdate = ({history , match}) =>{

@@ -153,9 +153,9 @@ function Login({history}) {
         shape="round"
         icon={<MailOutlined />}
         size="large"
-        disabled={!email || !password.length < 6}
+        disabled={!email || !password}
       >
-        Login with Email/Password
+        Login
       </Button>
 
 

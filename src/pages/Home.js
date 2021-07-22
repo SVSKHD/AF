@@ -45,7 +45,7 @@ const Home=(props)=> {
 
                 <div className="col-md-6">
                 <h1 className="HomeDecor">AquaKart</h1>
-                <h2 className="HomeDecor2">Too Good to believe</h2> 
+                <h2 className="HomeDecor2">Best Fit to Your Budget</h2> 
                 </div>
 
                 <div className="col-md-6">

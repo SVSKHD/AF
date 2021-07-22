@@ -11,6 +11,8 @@ import { LoadingOutlined } from "@ant-design/icons";
 
 
 
+
+
 // // pages
 // const  Home = lazy(()=>import("./pages/Home"
 // const  Register = lazy(()=>import('./pages/auth/Register';
@@ -50,6 +52,8 @@ import { LoadingOutlined } from "@ant-design/icons";
 
 // pages
 const  Home = lazy(()=>import("./pages/Home"))
+const  Contact = lazy(()=>import  ("./pages/Contact"))
+const  NotFound = lazy(()=>import ("./pages/NotFound"))
 const  Register = lazy(()=>import('./pages/auth/Register'))
 const  RegisterComplete = lazy(()=>import('./pages/auth/RegisterComplete'));
 const  Login = lazy(()=>import('./pages/auth/Login'));
@@ -144,6 +148,7 @@ const Routing =()=> {
          <Route exact path="/cart" component={Cart}/>
          <Route exact path="/checkout" component={ChecKout}/>
          <Route exact path="/payment" component={Payment}/>
+         <Route exact path="/contact" component={Contact}/>
          {/* productroutes */}
          <Route exact path="/product/:slug" component={Product}/>
          {/* Categoryroutes */}

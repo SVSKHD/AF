@@ -4,11 +4,11 @@ import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import {getCategories} from "../../../components/functions/category"
-import {getSub , getSubs , createSub , removeSub} from "../../../components/functions/SubCategory"
+import {getSubs , createSub , removeSub} from "../../../components/functions/SubCategory"
 import NAVB from "../../../components/Layout/NAVB";
 import AdminNav from '../../../components/Layout/AdminNAV';
 import SearchForm from "../../../components/forms/SearchForm";
-import {CloseOutlined , EditOutlined , DeleteOutlined} from "@ant-design/icons"
+import {CloseOutlined , EditOutlined } from "@ant-design/icons"
 
 const SubCreate = (props) => {
     const {user} = useSelector(state=>({...state}))

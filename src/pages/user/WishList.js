@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import {Card} from "antd"
 import UserNav from '../../components/Layout/UserNav';
 import NAVB from '../../components/Layout/NAVB';
-import { useDispatch, useSelector } from 'react-redux';
+import {useSelector } from 'react-redux';
 import { getWishlist, removeWishlist } from '../../components/functions/user';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {FaTimesCircle} from "react-icons/fa"
 
 

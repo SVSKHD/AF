@@ -57,12 +57,12 @@ return(
 <div className="ProductCard mb-2">
 
 <Card
+className="ProductRound"
 type="inner"
 cover={
 <img
 src={images && images.length ? images[0].url : Default}
 style={{ height: "250px", objectFit: "cover" }}
-className="p-1"
 />
 }
 actions={[

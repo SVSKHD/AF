@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { getProduct, getRelated, productStar } from "../components/functions/product"
 import NAVB from "../components/Layout/NAVB"
 import {Card , Tabs , Tooltip} from "antd"
-import { HeartOutlined, ReadOutlined, ShoppingCartOutlined  , WhatsAppOutlined} from "@ant-design/icons"
+import { HeartOutlined , ShoppingCartOutlined  , WhatsAppOutlined} from "@ant-design/icons"
 import {Carousel} from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Default from "../images/Default.png"
@@ -191,11 +191,29 @@ return(
           </TabPane>
           <TabPane tab="Contact Us" key="2">
             <button className="btn btn-raised">
-            <WhatsAppOutlined style={{fontSize:"2rem"}} />
+            <WhatsAppOutlined href="" style={{fontSize:"2rem"}} />
             </button>
           </TabPane>
-          <TabPane tab="Card Tab 3" key="3">
-            Content of card tab 3
+          <TabPane tab="Installation" key="3">
+            <ul>
+              <li>Installation is done by concerned Company Crew Men</li>
+              <li>Auto Softeners Installation Process will be handled by us</li>
+              <li>Plumbing Charges and Plumbing Material are variable in nature</li>
+              <li>Bathroom and Washing Water Softeners are installations has to be requested us after Purchase</li>
+              <li className="text-success">Immediate Delivery in any part of Hyderabad.</li>
+            </ul>
+            <h3 className="text-danger">What you need to know</h3>
+            <hr/>
+            
+            <ul>
+             <li>Installation is free , when it is a standard installation</li>
+             <li>In Complex Scenaria plumber might be needed (if needed we can help you in that)</li>
+             <li>Plumbing Charges will be charged if any complex or excess Plumbing Material</li>
+             <li>Plumbing material and Plumbing charges will on Client Scope</li>
+            </ul>
+            <hr/>
+            <button className="btn btn-raised">Know How Is Done</button>
+          
           </TabPane>
         </Tabs>
         <br/>
