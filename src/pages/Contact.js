@@ -6,6 +6,7 @@ import AS from "../images/AS.jpg"
 import BS from "../images/BS.jpg"
 import ROE from "../images/ROE.jpg"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Seo from "../components/Seo"
 
 
 
@@ -15,6 +16,12 @@ return(
 <>
 <div>
 <NAVB/>
+<Seo
+title="Aquakart | Contact Form"
+description="AquaKart Product Form and you can contact us from here and keep your queries here to get solved out "
+keywords="AquaKart Contact us  , Contact Form"
+url="https://aquakart.store/contact"
+/>
 <br/>
 <div className="container">
 

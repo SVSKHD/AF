@@ -42,14 +42,17 @@ const SubHome = ({ match }) => {
             </h4>
           )}
         </div>
+      <div className="card">
+      <div className="card-body">
       <div className="row">
         {products.map((p) => (
-          <div className="col" key={p._id}>
+          <div className="col-md-4 shadow-lg" key={p._id}>
             <ProductCard product={p} />
           </div>
         ))}
       </div>
-   
+      </div>
+      </div>
     </div>
     </div>
   </div>

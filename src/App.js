@@ -59,6 +59,7 @@ const  RegisterComplete = lazy(()=>import('./pages/auth/RegisterComplete'));
 const  Login = lazy(()=>import('./pages/auth/Login'));
 const  ForgotPassword =lazy(()=>import("./pages/auth/ForgotPassword"));
 const  History = lazy(()=>import("./pages/user/History"));
+const FAQ = lazy(()=>import("./pages/faq"))
 // private route
 const  UserRoute = lazy(()=>import("./components/Routes/UserRoute"))
 const  AdminRoute = lazy(()=>import("./components/Routes/UserRoute"));
@@ -83,7 +84,7 @@ const  Cart = lazy(()=>import("./pages/cart"));
 const  ChecKout = lazy(()=>import("./pages/Checkout"));
 const  CreateCoupon = lazy(()=>import("./pages/admin/Coupon/CreateCoupon"));
 const  Payment = lazy(()=>import("./pages/Payment"));
-
+const Blogs = lazy(()=>(import("./pages/Blogs")))
 // cartNav
 const  SideDrawer = lazy(()=>import("./components/Drawer/SideDrawer"))
 
@@ -149,6 +150,8 @@ const Routing =()=> {
          <Route exact path="/checkout" component={ChecKout}/>
          <Route exact path="/payment" component={Payment}/>
          <Route exact path="/contact" component={Contact}/>
+         <Route exact path="/Blogs" component={Blogs}/>
+         <Route exact path="/faq" component={FAQ}/>
          {/* productroutes */}
          <Route exact path="/product/:slug" component={Product}/>
          {/* Categoryroutes */}

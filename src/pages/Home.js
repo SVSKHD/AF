@@ -12,6 +12,7 @@ import SubList from "../components/sub/SubList"
 import Search from 'antd/lib/transfer/search';
 import Seo from '../components/Seo';
 import Default from "../images/Default.png"
+import { Footer } from 'antd/lib/layout/layout';
 
 const Home=(props)=> {
     const [products , setProducts] = useState([])
@@ -35,7 +36,14 @@ const Home=(props)=> {
             <Seo
             title="AquaKart | Shop your Home Appliances , Softeners and many more"
             description ="Aquakart is all about you basic needs at best prices and at best services."
-            keywords="AquaKart , kent Softener products , IonExchane Softeners , 3M Softeners , Automatic Water Softeners , Water purifiers"
+            keywords="
+            AquaKart , 
+            AquaKart Store , 
+            kent Softener products , 
+            IonExchane Softeners , 
+            3M Softeners , 
+            Automatic Water Softeners ,
+            RO Purifiers"
             image={Default}
             url="https://aquakart.store"
             />
@@ -94,7 +102,8 @@ const Home=(props)=> {
             <br/>
             </div>
 
-            
+        
+        <br/>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu , Badge } from "antd";
+import { Menu , Badge  , Layout , Breadcrumb} from "antd";
 import {
   HomeOutlined,
   AppstoreOutlined,
@@ -12,17 +12,20 @@ import {
   SearchOutlined ,
   ShoppingCartOutlined,
   CarTwoTone,
-  ReadOutlined
+  ReadOutlined,
+  BookOutlined
 } from "@ant-design/icons";
 import {Link} from "react-router-dom"
 import firebase from "firebase"
 import {useDispatch , useSelector} from "react-redux"
 import {useHistory} from "react-router-dom"
 import Search from "../forms/Search";
+import Default from "../../images/Default.png"
 
 const { SubMenu, Item } = Menu;
+const {Header , Content , Footer} = Layout
 
-const NAVB = () => {
+const NAVB = (props) => {
   const [current, setCurrent] = useState("home");
   let dispatch = useDispatch()
   let { user , cart } = useSelector((state) => ({ ...state }));
@@ -44,12 +47,26 @@ const NAVB = () => {
 
   return (
     <>
+    
+    <Header>
+    
+    
     <Menu 
+    style={{textAlign:"center"}}
     theme="dark" 
     onClick={handleClick} 
     selectedKeys={[current]} 
     mode="horizontal"
     >
+      <Item className="text-left">
+      <a href="/">
+      <img
+      src={Default}
+      alt="Aquakart LOGO"
+      className="logo"
+      />
+      </a>
+      </Item>
       
       <Item key="home" icon={<HomeOutlined/>}>
         Home
@@ -121,12 +138,22 @@ const NAVB = () => {
         Know More
       <Link to="/Blogs"/>
       </Item>  
+
+      <Item key="Cart" icon={<BookOutlined/>}>
+       FAQ
+      <Link to="/faq"/>
+      </Item>  
       
     </Menu>
-    <br/>
-    <div className="container text-center">
     
-    </div>
+    </Header>
+    <br/>
+    
+    
+   
+   
+    {props.children}
+    <br/>
   </>   
   );
 };
