@@ -120,7 +120,7 @@ function Login({history}) {
     const LoginForm = () =>{
         return(
             <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={()=>{handleSubmit()}}>
                
             <input 
             type="email" 
@@ -167,7 +167,7 @@ function Login({history}) {
  
 
     return (
-        <div>
+        <div className="Hometext">
             <NAVB/>
             <div className="container p-5">
             <div className="row">
@@ -181,7 +181,7 @@ function Login({history}) {
             {LoginForm()}
 
             <Button
-            onClick={googleLogin}
+            onClick={()=>googleLogin()}
             icon={<GoogleOutlined/>}
             shape="round"
             size="large"

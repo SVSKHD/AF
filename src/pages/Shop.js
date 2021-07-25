@@ -309,7 +309,7 @@ const Shop = () =>{
     };
 return(
     <>
-    <NAVB/>
+    
     <Seo
     title={`Aquakart Store | Briefing and filtering on your requirements `}
     description={`Aquakart best place to shop and best place to get serviced`}
@@ -317,9 +317,8 @@ return(
     image={Default}
     url="https://aquakart.store/shop"
     />
-    <br/>
-    <div className="container">
-    
+    <div className="Hometext">
+    <NAVB/>
     <div className="container">
       <Card>
         <div className="row">

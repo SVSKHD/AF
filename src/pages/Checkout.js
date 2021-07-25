@@ -12,6 +12,7 @@ import {
   createCashOrderForUser
 } from "../components/functions/user"
 import ReactQuill from "react-quill"
+import { add } from "lodash"
 
 
 const ChecKout=({history})=>{
@@ -134,7 +135,12 @@ products.map((p, i) => (
 const showAddress = () =>{
 return(
 <>
-<ReactQuill theme="snow" value={address} onChange={setAddress}/>
+<br/>
+<input
+className="form-control"
+placeholder="Place Your Address Here"
+onChange={()=>setAddress(address)}
+/>
 <br/>
 <button onClick={saveAddressToDb} className="btn btn-raised">
 Save Address
@@ -147,7 +153,14 @@ const showPhone =(e)=>{
 return(
 <>
 <div>
-<ReactQuill theme="snow" value={phone} onChange={setPhone}/>
+<br/>
+<input
+onChange={()=>setPhone(phone)}
+type="phone"
+maxLength={10}
+placeholder="Place Your Phone NO"
+className="form-control"
+/>
 <br/>
 <button onClick={SavePhoneToDB} className="btn btn-raised">
 Save Phone
@@ -253,7 +266,7 @@ Place Order
 ):(
 <button
 className="btn btn-primary"
-disabled={!addressSaved || !products.length}
+disabled={!addressSaved || !phonesaved || !products.length}
 onClick={()=>history.push("/payment")}
 >
 Place Order

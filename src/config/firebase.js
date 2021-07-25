@@ -18,5 +18,4 @@ firebase.initializeApp(Firebase)
 
 export const auth = firebase.auth()
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
-const messaging = firebase.messaging()
 export const name = "Aquakart | Best Shopping Cart"
