@@ -44,7 +44,7 @@ await auth.sendPasswordResetEmail(email , config)
 
 return(
 <div>
-<NAVB/>
+<NAVB>
 <div className="container col-md-6 offset-md-3 p-5">
 
 <Card>
@@ -71,6 +71,7 @@ placeholder="Place Your Registered Email"
 </form>
 </Card>
 </div>
+</NAVB>
 </div>
 )
 }

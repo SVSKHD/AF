@@ -318,7 +318,7 @@ return(
     url="https://aquakart.store/shop"
     />
     <div className="Hometext">
-    <NAVB/>
+    <NAVB>
     <div className="container">
       <Card>
         <div className="row">
@@ -456,6 +456,7 @@ return(
         </div>
         </Card>
         </div>
+        </NAVB>
     </div>
    
   

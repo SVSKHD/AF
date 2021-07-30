@@ -68,7 +68,7 @@ return(
 
 return(
 <div>
-<NAVB/>
+<NAVB>
 <br/>
 <div className="container">
 <Card>
@@ -85,6 +85,7 @@ return(
 
 </Card>
 </div>
+</NAVB>
 </div>
 )
 }

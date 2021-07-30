@@ -35,7 +35,7 @@ const handleChnage = (orderId , orderStatus) =>{
 
     return (
         <div className="ADMINDASH">
-            <NAVB/>
+            <NAVB>
             <br className="mb-3"/>
             <div className="container">
                 <Card>
@@ -55,6 +55,7 @@ const handleChnage = (orderId , orderStatus) =>{
                     </div>
                 </Card>
             </div>
+            </NAVB>
         </div>
 
 )

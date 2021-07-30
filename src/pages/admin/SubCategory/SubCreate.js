@@ -93,7 +93,7 @@ const searched = (keyword) =>(c)=>c.name.toLowerCase().includes(keyword)
 
     return ( 
         <div className="Category">
-        <NAVB/>
+        <NAVB>
         <br/>
         <div className="container">
         <Card>
@@ -173,6 +173,7 @@ const searched = (keyword) =>(c)=>c.name.toLowerCase().includes(keyword)
         <div>
         
         </div>
+        </NAVB>
         </div>  
     );
 }

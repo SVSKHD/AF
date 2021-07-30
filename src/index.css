@@ -80,12 +80,39 @@ body{
   color: whitesmoke;
 }
 
+.HomeDecorF{
+  font-family: Pattaya;
+  font-size: 5rem;
+  color: whitesmoke;
+}
+
+.HomeDecor2F{
+  font-family: Montserrat;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.cardB{
+  color: aliceblue;
+}
+
+.cardF{
+  border-radius: 1rem;
+}
+
+.SUB{
+  color: antiquewhite;
+}
+
 .Typed{
   font-family: Montserrat;
   color:whitesmoke;
   font-size: 2rem;
 }
 
+.Footer{
+  background-color: #051937;
+}
 
 
 .Hometext{

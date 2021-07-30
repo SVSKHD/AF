@@ -78,7 +78,7 @@ return(
 
 return(
 <div>
-<NAVB/>
+<NAVB>
 <br/>
 <div className="container">
 <Card>
@@ -121,6 +121,7 @@ categories.map((c) => (
 
 </Card>
 </div>
+</NAVB>
 </div>
 )
 }

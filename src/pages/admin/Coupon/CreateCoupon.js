@@ -56,7 +56,7 @@ toast.error(`Coupon name: ${res.data.name} deleted`)
 return(
 <>
 <div className="CommonD">
-<NAVB/>
+<NAVB>
 <div>
 <div className="container">
 <Card>
@@ -129,6 +129,7 @@ required
 </Card>
 </div>
 </div>
+</NAVB>
 </div>
 </>
 )

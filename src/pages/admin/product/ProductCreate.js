@@ -76,7 +76,7 @@ const ProductCreate = () => {
 
   return (
     <div>
-    <NAVB/>
+    <NAVB>
     <br/>
     <div className="Category">
     <div className="container">
@@ -126,6 +126,7 @@ const ProductCreate = () => {
     </Card>
     </div>
     </div>
+    </NAVB>
     </div>
   );
 };

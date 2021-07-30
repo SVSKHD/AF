@@ -15,7 +15,7 @@ const Contact = () =>{
 return(
 <>
 <div>
-<NAVB/>
+<NAVB>
 <Seo
 title="Aquakart | Contact Form"
 description="AquaKart Product Form and you can contact us from here and keep your queries here to get solved out "
@@ -70,6 +70,7 @@ dynamicHeight={true}
 </div> 
 </Carousel>
 </div>
+</NAVB>
 </div>
 </>
 )

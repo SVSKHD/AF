@@ -15,7 +15,7 @@ const Payment = () =>{
 return(
 <>
 <div className="CommonD">
-<NAVB/>
+<NAVB>
 <br/>
 <div className="container">
 <Card>
@@ -25,6 +25,7 @@ return(
 </Elements>
 </Card>
 </div>
+</NAVB>
 </div>
 </>
 )

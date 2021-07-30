@@ -9,7 +9,7 @@ const Faq = () =>{
 return(
 <>
 <div className="Hometext">
-<NAVB/>
+<NAVB>
 <br/>
 <div className="container">
 <div className="card">
@@ -56,6 +56,7 @@ Plumbing material is variable in nature and changes from place to place.
 </div>
 </div>
 </div>
+</NAVB>
 </div>
 </>
 )

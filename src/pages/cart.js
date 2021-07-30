@@ -43,7 +43,7 @@ if (res.data.ok) history.push("/checkout");
 return(
 <>
 <div className="CommonD">
-<NAVB/>
+<NAVB>
 <div className="container">
 <Card>
 <div className="row">
@@ -124,6 +124,8 @@ Pay Cash on Delivery
 </div>
 </Card>
 </div>
+<br className="mb-5"/>
+</NAVB>
 </div>
 </>
 )

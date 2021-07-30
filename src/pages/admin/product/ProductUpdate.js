@@ -123,7 +123,7 @@ const ProdcutUpdate = ({match , history}) =>{
   
 return(
 <div className="HometextDark">
-    <NAVB/>
+    <NAVB>
     <br className="mb-4"/>
     <div className="container">
     <Card>
@@ -167,6 +167,7 @@ return(
     </div>
     </Card>
     </div>
+    </NAVB>
 </div>
 )
 }

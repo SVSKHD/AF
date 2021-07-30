@@ -21,9 +21,10 @@ import {useDispatch , useSelector} from "react-redux"
 import {useHistory} from "react-router-dom"
 import Search from "../forms/Search";
 import Default from "../../images/Default.png"
+import Footer from "../Layout/Footer"
 
 const { SubMenu, Item } = Menu;
-const {Header , Content , Footer} = Layout
+const {Header} = Layout
 
 const NAVB = (props) => {
   const [current, setCurrent] = useState("home");
@@ -153,6 +154,8 @@ const NAVB = (props) => {
    
    
     {props.children}
+    <br className="mb-5"/>
+    <Footer/>
     <br/>
   </>   
   );

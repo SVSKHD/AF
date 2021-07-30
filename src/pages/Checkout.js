@@ -214,7 +214,7 @@ className="form-control"
 return(
 <>
 <div className="CommonD">
-<NAVB/>
+<NAVB>
 <br/>
 <div className="container">
 <Card>
@@ -295,6 +295,7 @@ class="btn btn-danger">
 </div>
 </Card>
 </div>
+</NAVB>
 </div>
 </>
 )

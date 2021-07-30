@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { getProduct, getRelated, productStar } from "../components/functions/product"
 import NAVB from "../components/Layout/NAVB"
 import {Card , Tabs , Tooltip} from "antd"
-import { HeartOutlined , ShoppingCartOutlined  , WhatsAppOutlined} from "@ant-design/icons"
+import { HeartOutlined , ShoppingCartOutlined } from "@ant-design/icons"
+import {FaWhatsapp} from "react-icons/fa"
 import {Carousel} from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Default from "../images/Default.png"
@@ -123,7 +124,7 @@ return(
     keywords ={`${product.title} , Kent Grand Star RO , Kent Products , AutoMatic Water Softeners , Industria Water Softeners , `}
     image={Default}
     />
-    <NAVB/>
+    <NAVB>
     <br className="mb-3"/>
     <div className="container"> 
         <Card>
@@ -190,9 +191,13 @@ return(
             {Description}
           </TabPane>
           <TabPane tab="Contact Us" key="2">
-            <button className="btn btn-raised">
-            <WhatsAppOutlined href="" style={{fontSize:"2rem"}} />
-            </button>
+              <a
+              className="btn btn-raised"
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=9182119842&text&app_absent=0"
+              > 
+              <FaWhatsapp size={30}/>
+              </a>
           </TabPane>
           <TabPane tab="Installation" key="3">
             <ul>
@@ -231,6 +236,7 @@ return(
        </Card>
        <br/>
     </div>
+    </NAVB>
 </div>
 )
 }

@@ -12,7 +12,6 @@ import { LoadingOutlined } from "@ant-design/icons";
 
 
 
-
 // // pages
 // const  Home = lazy(()=>import("./pages/Home"
 // const  Register = lazy(()=>import('./pages/auth/Register';
@@ -158,6 +157,7 @@ const Routing =()=> {
          <Route exact path="/category/:slug" component={CategoryHome}/>
          {/* subcategory */}
          <Route exact path="/subcategory/:slug" component={SubHome}/>
+
          {/* UserRoutes */}
          <UserRoute exact path="/user/history" component={History}/>
          <UserRoute exact path="/user/password" component={Password}/>

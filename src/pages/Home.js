@@ -12,7 +12,7 @@ import SubList from "../components/sub/SubList"
 import Search from 'antd/lib/transfer/search';
 import Seo from '../components/Seo';
 import Default from "../images/Default.png"
-import { Footer } from 'antd/lib/layout/layout';
+import  Footer  from '../components/Layout/Footer';
 
 const Home=(props)=> {
 const [products , setProducts] = useState([])
@@ -32,7 +32,7 @@ setLoading(false)
 
 return (
 <div className="Hometext">
-<NAVB/>
+<NAVB>
 <Seo
 title="AquaKart | Shop your Home Appliances , Softeners and many more"
 description ="Aquakart is all about you basic needs at best prices and at best services."
@@ -57,15 +57,7 @@ url="https://aquakart.store"
 </div>
 
 <div className="col-md-6">
-<Typed
-className="Typed"
-strings={["Here you can shop Best products", "Here you can get Best Service", "Here you can get Best offers"]}
-typeSpeed={50}
-backSpeed={50}
-backDelay={1}
-loop
-smartBackspace
-/>
+
 </div>
 </div>
 
@@ -93,17 +85,21 @@ product={product}
 )}
 
 <br/>
-<CategoryList/>
+
 <br/>
-<SubList/>
+
 </div>
 
 
+
 <br/>
 </div>
 
 
+
+
 <br/>
+</NAVB>
 </div>
 );
 }

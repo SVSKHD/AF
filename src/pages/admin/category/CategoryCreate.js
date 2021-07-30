@@ -88,7 +88,7 @@ const CategoryForm = () =>{
 
 return(
 <div className="Category">
-<NAVB/>
+<NAVB>
 <div className="container">
 <br className="mb-3"/>
 <div>
@@ -149,6 +149,7 @@ setKeyword={setKeyword}
 </Card>
 </div>
 </div>
+</NAVB>
 </div>
 )
 }

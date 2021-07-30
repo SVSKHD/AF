@@ -168,7 +168,7 @@ function Login({history}) {
 
     return (
         <div className="Hometext">
-            <NAVB/>
+            <NAVB>
             <div className="container p-5">
             <div className="row">
             <div className="col-md-6 offset-md-3">
@@ -209,6 +209,7 @@ function Login({history}) {
             </div>
             </div>
             </div>
+            </NAVB>
         </div>
     );
 }

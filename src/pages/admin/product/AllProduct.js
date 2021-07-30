@@ -59,7 +59,7 @@ if(answer){
 
 return(
 <div className="ADMINDASH">
-    <NAVB/>
+    <NAVB>
     <br/>
     <div className="container">
     <Card>
@@ -86,6 +86,7 @@ return(
      </div>
     </Card>
     </div>
+    </NAVB>
 </div>
 )
 }

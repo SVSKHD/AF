@@ -2,7 +2,14 @@ import {Helmet} from "react-helmet"
 
 const Seo = ({title , description , keywords , image , url}) =>{
 return(
+
 <Helmet>
+{/* analytics */}
+{/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1KFHJYV8P"></script>
+
+
+
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
