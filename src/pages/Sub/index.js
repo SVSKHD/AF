@@ -23,7 +23,7 @@ const SubHome = ({ match }) => {
 
   return (
     <div className="Hometext">
-    <NAVB/>
+    <NAVB>
     <div className="container-fluid">
       <div className="row">
       
@@ -55,6 +55,7 @@ const SubHome = ({ match }) => {
       </div>
     </div>
     </div>
+  </NAVB>
   </div>
   );
 };

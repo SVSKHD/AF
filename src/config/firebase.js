@@ -19,3 +19,4 @@ firebase.initializeApp(Firebase)
 export const auth = firebase.auth()
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
 export const name = "Aquakart | Best Shopping Cart"
+export const link = "https://aquakart.store"

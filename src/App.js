@@ -11,7 +11,6 @@ import { LoadingOutlined } from "@ant-design/icons";
 
 
 
-
 // // pages
 // const  Home = lazy(()=>import("./pages/Home"
 // const  Register = lazy(()=>import('./pages/auth/Register';
@@ -65,7 +64,8 @@ const  AdminRoute = lazy(()=>import("./components/Routes/UserRoute"));
 // userelements
 const  Password = lazy(()=>import("./pages/user/Password"));
 const  WishList = lazy(()=>import("./pages/user/WishList"));
-
+// blogs
+const Blogs = lazy(()=>(import("./pages/Blogs")))
 // AdminElements
 const  AdminDashboard = lazy(()=>import("./pages/admin/AdminDashboard"));
 const  Category = lazy(()=>import("./pages/admin/category/CategoryCreate"));
@@ -83,7 +83,9 @@ const  Cart = lazy(()=>import("./pages/cart"));
 const  ChecKout = lazy(()=>import("./pages/Checkout"));
 const  CreateCoupon = lazy(()=>import("./pages/admin/Coupon/CreateCoupon"));
 const  Payment = lazy(()=>import("./pages/Payment"));
-const Blogs = lazy(()=>(import("./pages/Blogs")))
+const BlogCreate = lazy(()=>(import("./pages/admin/Blog/blogCreate")))
+const BlogCategoryUpdate = lazy(()=>(import("./pages/admin/blogcategory.js/bupdate")))
+const blogcategorycreate = lazy(()=>(import("./pages/admin/blogcategory.js/bcreat")))
 // cartNav
 const  SideDrawer = lazy(()=>import("./components/Drawer/SideDrawer"))
 
@@ -172,6 +174,9 @@ const Routing =()=> {
          <AdminRoute exact path="/admin/allproducts" component={AllProduct}/>
          <AdminRoute exact path="/admin/product/:slug" component={ProdcutUpdate}/>
          <AdminRoute exact path="/admin/coupon" component={CreateCoupon}/>
+         <AdminRoute exact path="/admin/blogcategory" component={blogcategorycreate}/>
+         <AdminRoute exact path="/admin/blogcategory/:slug" component={BlogCategoryUpdate}/>
+         <AdminRoute exact path="/admin/blog" component={BlogCreate}/>
          </Switch>
 
        </Router>

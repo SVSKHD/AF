@@ -26,6 +26,14 @@ return(
             <li className="nav-item">
                 <Link to="/admin/coupon" className="nav-link">Coupons</Link>
             </li>
+            <hr/>
+            <h5>Blog Section</h5>
+            <li className="nav-item">
+                <Link to="/admin/blogcategory" className="nav-link">Blog-category</Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/admin/blog" className="nav-link">Blogs</Link>
+            </li>
         </ul>
     </nav>
    </Card>

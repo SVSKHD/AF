@@ -79,7 +79,8 @@ const CategoryForm = () =>{
             required
             />
             <br/>
-            <button className="btn btn-outline-success">Create Category</button>
+            <button 
+            className="btn btn-outline-success">Create Category</button>
             </form>
         </div>
     )

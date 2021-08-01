@@ -18,7 +18,7 @@ const showCategories = () =>
 categories.map((c) => (
 <div
 key={c._id}
-className="col-md-2 badge"
+className="col-md-4 badge"
 >
 <Link to={`/category/${c.slug}`}>
 <p className="SUB">

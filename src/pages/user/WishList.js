@@ -34,7 +34,7 @@ const WishList = (props)=> {
     return (
         <div className="CommonD">
         <div>
-        <NAVB/>
+        <NAVB>
         <br/>
         <div className="container">
         <Card className="rounded">
@@ -66,6 +66,7 @@ const WishList = (props)=> {
         </div>
         </Card>
         </div>
+        </NAVB>
         </div>
         </div>
     );

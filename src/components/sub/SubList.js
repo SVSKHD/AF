@@ -17,7 +17,7 @@ setLoading(false);
 const showSubs = () =>
 subs.map((s) => (
 <div 
-className="col-md-2 badge"
+className="col-md-4 badge"
 key={s._id}>
 <Link  to={`/subcategory/${s.slug}`}>
 <p className="SUB">
@@ -30,7 +30,7 @@ key={s._id}>
 
 return (
 <div className="container">
-<h4 className="Hometext" >related Products</h4>
+<h4 className="Hometext" >Related Products</h4>
 <hr/>
 <div className="row">
 {loading ? <h4 className="Category">Loading...</h4> : showSubs()}

@@ -48,7 +48,7 @@ const Password=(props)=> {
 
     return (
         <div className="CommonD">
-        <NAVB/>
+        <NAVB>
         <br/>
         <div className="container">
         <Card className="rounded">
@@ -70,6 +70,7 @@ const Password=(props)=> {
         </div>
         </Card>
         </div>
+        </NAVB>
         </div>
     );
 }

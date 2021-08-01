@@ -13,6 +13,7 @@ import Search from 'antd/lib/transfer/search';
 import Seo from '../components/Seo';
 import Default from "../images/Default.png"
 import  Footer  from '../components/Layout/Footer';
+import Purifiers from '../components/home/Purifier';
 
 const Home=(props)=> {
 const [products , setProducts] = useState([])
@@ -24,7 +25,7 @@ loadAllProducts()
 
 const loadAllProducts = () =>{
 setLoading(true)
-getProductbyCount(3).then((res)=>{
+getProductbyCount(4).then((res)=>{
 setProducts(res.data)
 setLoading(false)
 })
@@ -73,7 +74,7 @@ url="https://aquakart.store"
 {products.map((product)=>{
 return(
 <>
-<div className="col-md-4">
+<div className="col-md-3">
 <ProductCard
 product={product}
 />
@@ -85,7 +86,7 @@ product={product}
 )}
 
 <br/>
-
+<Purifiers/>
 <br/>
 
 </div>

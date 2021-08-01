@@ -16,6 +16,7 @@ const [name , setName] = useState("")
 const [loading , setLoading] = useState(false)
 
 let slug = useParams()
+
 useEffect(()=>{
 LoadCategories()
 },[])

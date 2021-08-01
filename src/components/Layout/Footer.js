@@ -40,6 +40,13 @@ className="form-control"
 placeholder="Description"
 type="text-area"
 />
+<br/>
+
+<button 
+className="btn btn-raised"
+>Submit Your Required Product
+</button>
+
 </div>
 
 </div>

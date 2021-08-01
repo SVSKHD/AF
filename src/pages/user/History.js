@@ -83,7 +83,7 @@ const showEachOrder = () =>orders.map((order , i)=>(
 
 return(
 <div className="CommonD">
-<NAVB/>
+<NAVB>
 
 <br className="mb-3"/>
 <div className="container">
@@ -105,6 +105,7 @@ return(
 </div>
 </Card>
 </div>
+</NAVB>
 </div>
 )
 }

@@ -18,7 +18,9 @@ import ProductCard from "../components/Card/ProductCard"
 import {addToWishlist} from "../components/functions/user"
 import {useHistory} from "react-router-dom"
 import Seo from "../components/Seo"
-import {name} from "../config/firebase"
+import {link, name} from "../config/firebase"
+import Schema from "../components/schema"
+
 const {Meta} = Card
 const {TabPane} = Tabs
 
@@ -118,11 +120,21 @@ useEffect(()=>{
 
 return(
 <div className="ProductCard">
+    <Schema 
+    name={product.title}
+    description={product.description}
+    rating={product.ratings}
+    image1={product.images && product.images[0].url}
+    brand={product.brand}
+    category={product.category?.name}
+    />
     <Seo
     title={`${product.title} |  ${name}`}
     description={product.description}
     keywords ={`${product.title} , Kent Grand Star RO , Kent Products , AutoMatic Water Softeners , Industria Water Softeners , `}
-    image={Default}
+    image={product.images && product.images[0].url}
+    url={`${link}/product/${slug}`}
+    
     />
     <NAVB>
     <br className="mb-3"/>
@@ -217,7 +229,11 @@ return(
              <li>Plumbing material and Plumbing charges will on Client Scope</li>
             </ul>
             <hr/>
-            <button className="btn btn-raised">Know How Is Done</button>
+            <a 
+            href="/blogs"
+            className="btn btn-raised">
+            Know How Is Done
+            </a>
           
           </TabPane>
         </Tabs>
