@@ -136,10 +136,10 @@ const Routing =()=> {
          </div>
        }
        >
-       <Router>
-         <SideDrawer/>
-         <ToastContainer/>
-         <Switch>
+        <Router>
+        <SideDrawer/>
+        <ToastContainer/>
+         
           {/* Routes */}
          <Route exact path="/" component={Home}/>
          <Route exact path="/register" component={Register}/>
@@ -177,7 +177,7 @@ const Routing =()=> {
          <AdminRoute exact path="/admin/blogcategory" component={blogcategorycreate}/>
          <AdminRoute exact path="/admin/blogcategory/:slug" component={BlogCategoryUpdate}/>
          <AdminRoute exact path="/admin/blog" component={BlogCreate}/>
-         </Switch>
+        
 
        </Router>
        </Suspense>

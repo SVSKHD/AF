@@ -57,6 +57,7 @@ return(
 <div className="ProductCard mb-2">
 
 <Card
+hoverable
 className="ProductRound"
 type="inner"
 cover={

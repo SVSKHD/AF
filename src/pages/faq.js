@@ -1,6 +1,7 @@
 import {Collapse} from "antd"
 import NAVB from "../components/Layout/NAVB"
-
+import Seo from "../components/Seo"
+import Default from "../images/Default.png"
 
 const {Panel} = Collapse
 
@@ -9,7 +10,19 @@ const Faq = () =>{
 return(
 <>
 <div className="Hometext">
+<Seo
+title="AquaKart | FAQ"
+description ="Clear your Doubts and Shop your products with no confusion , We are new to you but not to the services we provide, we just wanted you to know about what we provide and which kind of services we provide, well and how reliable they are."
+keywords="
+AquaKart FAQ , 
+AquaKart Store , 
+Shop your Home Appliances
+Home Appliances and Softeners"
+image={Default}
+url="https://aquakart.store/faq"
+/>
 <NAVB>
+
 <br/>
 <div className="container">
 <div className="card">

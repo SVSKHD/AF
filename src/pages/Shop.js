@@ -312,7 +312,7 @@ return(
     
     <Seo
     title={`Aquakart Store | Briefing and filtering on your requirements `}
-    description={`Aquakart best place to shop and best place to get serviced`}
+    description={`Here you can choose your product with custom filters with your need optimised with wide range of varieties of products are added here with great discounts with immediate delivery.`}
     keywords ={ `Kent Grand Star RO , Kent Products , AutoMatic Water Softeners , Industria Water Softeners , `}
     image={Default}
     url="https://aquakart.store/shop"

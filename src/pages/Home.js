@@ -36,15 +36,16 @@ return (
 <NAVB>
 <Seo
 title="AquaKart | Shop your Home Appliances , Softeners and many more"
-description ="Aquakart is all about you basic needs at best prices and at best services."
+description ="Aquakart is all about your basic home need with the best prices and with all flexible options in payments and many more, avail of our services and rest yourself "
 keywords="
 AquaKart , 
 AquaKart Store , 
+Shop your Home Appliances
 kent Softener products , 
-IonExchane Softeners , 
-3M Softeners , 
+IonExchane Softeners ,  
+Online Store ofr softeners and many more, 
 Automatic Water Softeners ,
-RO Purifiers"
+RO Purifiers "
 image={Default}
 url="https://aquakart.store"
 />
