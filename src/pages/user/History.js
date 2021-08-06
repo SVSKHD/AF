@@ -54,7 +54,7 @@ document={<Invoice order={order} />}
 fileName="AquaInvoice.pdf"
 className="btn btn-sm btn-block btn-outline-primary"
 >
-Download PDF
+Download Invoice
 </PDFDownloadLink>
 );
 
