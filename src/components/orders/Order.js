@@ -49,9 +49,9 @@ const Orders = ({ orders, handleStatusChange  }) => {
       </thead>
       <tbody>
       <th scope="col">{order.orderdBy}</th>
-      <th scope="col">{order.userDetails.name}</th>
-      <th scope="col">{order.userDetails.phone}</th>
-      <th scope="col">{order.userDetails.email}</th>
+      <th scope="col">{order.userDetails?.name}</th>
+      <th scope="col">{order.userDetails?.phone}</th>
+      <th scope="col">{order.userDetails?.email}</th>
       </tbody>
      </table>
      <hr/>

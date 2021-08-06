@@ -132,14 +132,18 @@ products.map((p, i) => (
 </div>
 ));
 
+
 const showAddress = () =>{
 return(
 <>
 <br/>
 <input
+type="address"
 className="form-control"
 placeholder="Place Your Address Here"
-onChange={()=>setAddress(address)}
+onChange={(e)=>setAddress(e.target.value)}
+value={address}
+required
 />
 <br/>
 <button onClick={saveAddressToDb} className="btn btn-raised">
@@ -149,20 +153,25 @@ Save Address
 )
 }
 
-const showPhone =(e)=>{
+
+const showPhone =()=>{
 return(
 <>
 <div>
 <br/>
 <input
-onChange={()=>setPhone(phone)}
-type="phone"
 maxLength={10}
+onChange={(e)=>setPhone(e.target.value)}
+value={phone}
 placeholder="Place Your Phone NO"
 className="form-control"
+required
 />
 <br/>
-<button onClick={SavePhoneToDB} className="btn btn-raised">
+<button 
+onClick={SavePhoneToDB} 
+className="btn btn-raised"
+>
 Save Phone
 </button>
 </div>
@@ -184,7 +193,7 @@ position:"bottom-center"
 
 
 const saveAddressToDb = () => {
-// console.log(address);
+console.log(address);
 saveUserAddress(user.token, address).then((res) => {
 if (res.data.ok) {
 setAddressSaved(true);
@@ -258,7 +267,7 @@ Order Summary
 {COD ? (
 <button
 className="btn btn-primary"
-disabled={!addressSaved || !products.length}
+disabled={!phonesaved || !addressSaved || !products.length}
 onClick={createCashOrder}
 >
 Place Order
